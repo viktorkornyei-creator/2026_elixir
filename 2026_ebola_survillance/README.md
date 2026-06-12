@@ -1,7 +1,7 @@
 # Ebolya Mayinga Survaillance
 With this makefile you can download the reference genom of Ebola mayinga virus and create the files needed to compare it with other Ebola mayinga sequences visually
 
-## Projekt ID's
+## Project ID's
 URL = https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000848505.1/ \
 SRA Bio Project ID: PRJNA257197 \
 NCBI ebola ID: GCF_000848505.1 \
