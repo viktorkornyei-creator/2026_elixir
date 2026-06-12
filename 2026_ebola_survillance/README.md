@@ -9,6 +9,7 @@ metadata ID [good quality samples]: SRR1972976 | SRR1553426 | SRR1553425
 ## Projekt steps
 
 Download the data
-´´´
 
+´´´
+make download
 ´´´ 
