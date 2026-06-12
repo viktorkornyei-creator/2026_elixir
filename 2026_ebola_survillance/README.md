@@ -10,6 +10,6 @@ metadata ID [good quality samples]: SRR1972976 | SRR1553426 | SRR1553425
 
 Download the data
 
-´´´
+```
 make download
-´´´ 
+```
