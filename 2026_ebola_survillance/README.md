@@ -35,18 +35,20 @@ make align
 
 make vcf
 ```
-### Cleaning ans quick starting projekt
+### Cleaning and quick starting projekt
 For **cleaning all of your downloaded data** and SRR related files in this projekt
 ```
 make clean all
 ```
 
-It is recommended that you have already run the project at least once (this will include steps 1-4)
+Quick starting the projekt and running all of the steps
 ```
+# It is recommended that you have already run the project at least once (this will include steps 1-4)
 make start
 ```
 
 ## If you want to use other SRR file or limits:
+For other SRR file:
 ```
 # Cleaning the old files
 make clean-SRR
@@ -55,6 +57,7 @@ make clean-SRR
 # Using other SRR number ~ variable: {SRR} =
 make fastq align vcf SRR=
 ```
+For other limit:
 ```
 # Cleaning the old files
 make clean-SRR
@@ -62,6 +65,7 @@ make clean-SRR
 # Using other limit ~ variable: {LIMIT} =
 make fastq align vcf LIMIT=
 ```
+For other SRR file and limit:
 ```
 # Cleaning the old files
 make clean-SRR
@@ -69,5 +73,6 @@ make clean-SRR
 # You can combine it if needed ~ variable {LIMIT} and {SRR}
 make fastq align vcf LIMIT=  SRR=
 ```
+
 
 
