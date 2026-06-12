@@ -23,8 +23,8 @@ BAM = bam/${SRR}-${GENOME_NAME}.bam
 LIMIT=10000
 
 # the path of the reads file
-R1 = reads/${SRR}_1.fastq
-R2 = reads/${SRR}_2.fastq
+R1 = reads/${SRR}_${LIMIT}_1.fastq
+R2 = reads/${SRR}_${LIMIT}_2.fastq
 
 
 
@@ -34,9 +34,6 @@ help:
 
 #Run download than fastq than align
 start: download fastq align vcf
-
-#IF I want a new SRR numbered run
-new_srr: fastq align vcf
 
 #make the directories that are needed then download and unzip the fasta and gff files
 download: ${GENOME_FASTA} ${GENOME_GFF}
@@ -68,10 +65,13 @@ align:
 vcf:
 	make -f src/run/bcftools.mk REF=${GENOME_FASTA} BAM=${BAM} run
 
-#clean
+#clean srr
+clean SRR:
+	rm -rf bam reads vcf
+
+#clean all
 clean:
 	rm -rf bam reads vcf data
-
 
 .PHONY: download fastq	vcf
 
