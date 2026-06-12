@@ -66,11 +66,11 @@ vcf:
 	make -f src/run/bcftools.mk REF=${GENOME_FASTA} BAM=${BAM} run
 
 #clean srr
-clean SRR:
+clean-SRR:
 	rm -rf bam reads vcf
 
 #clean all
-clean:
+clean all:
 	rm -rf bam reads vcf data
 
 .PHONY: download fastq	vcf
